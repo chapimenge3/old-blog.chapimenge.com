@@ -1,7 +1,6 @@
 baseURL = "http://blog.chapimenge.com/"
 languageCode = "en-us"
 title = "Chapi Menge blog"
-avatar = "https://chapimenge.com/assets/img/chapi-2.jpg"
 theme = "m10c"
 
 [menu]
@@ -25,6 +24,7 @@ theme = "m10c"
 [params]
   author = "Chapi Menge"
   description = "Backend developer, DevOps, and a bit of everything else"
+  avatar = "avatar.webp"
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"

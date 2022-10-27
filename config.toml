@@ -1,0 +1,55 @@
+baseURL = "http://blog.chapimenge.com/"
+languageCode = "en-us"
+title = "Chapi Menge blog"
+avatar = "https://chapimenge.com/assets/img/chapi-2.jpg"
+theme = "m10c"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "catagories"
+    name = "Catagories"
+    url = "/catagories/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blogs"
+    url = "/blogs/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[params]
+  author = "Chapi Menge"
+  description = "Backend developer, DevOps, and a bit of everything else"
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/chapimenge3"
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/chapimenge3"
+  [[params.social]]
+    icon = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/chapimenge/"
+  [[params.social]]
+    icon = "instagram"
+    name = "Instagram"
+    url = "https://www.instagram.com/chapimenge3/"
+
+googleAnalytics = 'G-N2K8R5YBGP'
+
+disqusShortname = 'blog-chapimenge-com'

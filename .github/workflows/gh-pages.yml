@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           echo "current directory: $(pwd)"
-          cd ..
+          echo "Files in current directory: $(ls -l)"
           echo "current directory: $(pwd)"
           hugo --minify
 

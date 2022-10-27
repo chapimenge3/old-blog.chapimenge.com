@@ -16,13 +16,6 @@ theme = "m10c"
     name = "Catagories"
     url = "/catagories/"
     weight = 2
-
-  [[menu.main]]
-    identifier = "blog"
-    name = "Blogs"
-    url = "/blogs/"
-    weight = 3
-
   [[menu.main]]
     identifier = "about"
     name = "About"

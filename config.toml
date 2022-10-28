@@ -2,6 +2,8 @@ baseURL = "http://blog.chapimenge.com/"
 languageCode = "en-us"
 title = "Chapi Menge blog"
 theme = "m10c"
+googleAnalytics = "G-N2K8R5YBGP"
+disqusShortname = "blog-chapimenge-com"
 
 [menu]
   [[menu.main]]
@@ -46,6 +48,3 @@ theme = "m10c"
 [taxonomies]
   tag = "tags"
   category = "categories"
-
-googleAnalytics = "G-N2K8R5YBGP"
-disqusShortname = "blog-chapimenge-com"

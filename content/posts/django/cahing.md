@@ -1,6 +1,7 @@
 +++
-title = "Caching in Django"
+title = "Caching in Django part 1"
 tags = ["django"]
+date = '2022-10-28 19:23:39'
 +++
 
 This blog is high level overview of caching in Django. I will be using Django 3.0.5 and Python 3.8.2.
@@ -45,7 +46,7 @@ Django provides a caching framework that can be used to cache the data. It is a 
 
 ## Memory Caching or Memcached
 
-Memcached is a entirely memory based cache server. It is a very fast and efficient cache server. Memcached is a very popular caching backend and used by many websites like Facebook, Wikipedia, etc. It runs as a daemon process and it is very easy to setup. It is a very simple and easy to use caching backend. It is a very popular caching backend and used by many websites like Facebook, Wikipedia, etc. It runs as a daemon process and and is allotted a specified amount of RAM.
+Memcached is a entirely memory based cache server. It is a very fast and efficient cache server. Memcached is a very popular caching backend and used by many websites like Facebook, Wikipedia, etc. It runs as a daemon process and it is very easy to setup. It is a very simple and easy to use caching backends.
 
 ### Installing Memcached
 
@@ -84,7 +85,7 @@ CACHES = {
 
 ```
 
-Additionally Memchached can also have multiple cache server. This means you can run Memcached daemons on multiple machines, and the program will treat the group of machines as a single cache. To implement this on your Django project, you should include all server addresses in the `LOCATION`, either by **comma(,)**or **semicolon(;)** delimited string, or provide the values as a python list.
+Additionally Memchached can also have multiple cache server. This means you can run Memcached daemons on multiple machines, and the program will treat the group of machines as a single cache. To implement this on your Django project, you should include all server addresses in the `LOCATION`, either by **comma(,)** or **semicolon(;)** delimited string, or provide the values as a python list.
 
 So let's say we have 3 Memchached instances running on 
 - 145.216.61.211:11211
@@ -177,7 +178,7 @@ CACHES = {
 ...
 ```
 
-As your redis cache grows in size or you want to use multiple redis instances, you can use Redis either either as a semicolon or comma delimited string, or as a list. While using multiple redis instances, django will use the first redis instance for writing and the rest for reading.
+As your redis cache grows in size or you want to use multiple redis instances, you can use Redis either as a **comma(,)** or **semicolon(;)** delimited string, or as a list. While using multiple redis instances, django will use the first redis instance for writing and the rest for reading.
 
 ```python
 ...

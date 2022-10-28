@@ -6,6 +6,6 @@ title = 'Categories'
 
 - [AWS](/categories/aws/)
 - [Python](/categories/python/)
-- [Django](/categories/django/)
+- [Django](/tags/django/)
 - [Serverless](/categories/serverless/)
 - [Misc](/categories/misc/)

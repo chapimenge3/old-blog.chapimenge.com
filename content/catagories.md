@@ -4,8 +4,9 @@ title = 'Categories'
 
 # Blog Categories
 
-- [AWS](/categories/aws/)
-- [Python](/categories/python/)
+- [AWS](/tags/aws/)
+- [Python](/tags/python/)
 - [Django](/tags/django/)
-- [Serverless](/categories/serverless/)
-- [Misc](/categories/misc/)
+- [Serverless](/tags/serverless/)
+- [Freelancing](/tags/freelancing/)
+- [Misc](/tags/misc/)

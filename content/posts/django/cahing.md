@@ -6,7 +6,6 @@ date = '2022-10-28 19:23:39'
 
 This blog is high level overview of caching in Django. I will be using Django 3.0.5 and Python 3.8.2.
 
-<!-- show image -->
 ![Django cache image](/django_cache.webp)
 
 
@@ -211,3 +210,7 @@ Resource to use free redis server: [redislabs](https://redislabs.com/).
 In the next blog we will see how to use caching inside django view.
 
 This is it for this article. I hope you enjoyed it. If you have any questions or suggestions, please feel free to comment below.
+
+Thank you for reading.
+
+Chapi Menge

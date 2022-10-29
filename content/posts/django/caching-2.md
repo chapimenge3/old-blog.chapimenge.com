@@ -321,3 +321,7 @@ There is more example in the above repository. You can check it out.
 - [Django Debug Toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [Redis Lab](https://redislabs.com/)
+
+Thank you for reading.
+
+Chapi Menge

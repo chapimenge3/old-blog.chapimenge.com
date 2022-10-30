@@ -1,7 +1,7 @@
 +++
 title = "Caching in Django part 2"
 tags = ["django"]
-date = '2022-10-28 19:23:39'
+date = '2022-10-28 20:23:39'
 +++
 
 This is the second part of the blog on [caching in Django](https://blog.chapimenge.com/posts/django/cahing/). In this blog, we will be looking at how to use Redis as a caching backend in Django view.

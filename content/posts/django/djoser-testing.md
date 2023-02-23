@@ -6,7 +6,6 @@ date = '2023-01-02'
 
 Happy new year(2023) everyone. I hope you all had a great holiday. I am back with a new blog post.
 
-
 In this blog post we are gonna see, how to test djoser while you are using email activation for your users.
 
 **Requirements**

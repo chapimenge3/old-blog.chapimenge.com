@@ -1,6 +1,6 @@
 +++
 title = "Deploy telegram bot on Vercel(Python)"
-tags = ["python"]
+tags = ["python", "telegram", "fastapi", "vercel"]
 date = '2023-04-10 00:23:39'
 +++
 

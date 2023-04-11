@@ -1,5 +1,5 @@
 +++
-title = "Telegram bot deploy on Vercel(Python)"
+title = "Deploy telegram bot on Vercel(Python)"
 tags = ["python"]
 date = '2023-04-10 00:23:39'
 +++
@@ -209,11 +209,11 @@ def register_handlers(dispatcher):
     dispatcher.add_handler(start_handler)
 
 @app.post("/webhook")
-def webhook(request: Request):
+def webhook(webhook_data: TelegramWebhook):
     '''
     Telegram Webhook
     '''
-    webhook_data = request.json()
+    # Method 1
     bot = Bot(token=TOKEN)
     update = Update.de_json(webhook_data, app.bot)
     dispatcher = Dispatcher(bot, None, workers=4)
@@ -221,6 +221,13 @@ def webhook(request: Request):
 
     # handle webhook request
     dispatcher.process_update(update)
+
+    # Method 2
+    # you can just handle the webhook request here without using python-telegram-bot
+    # if webhook_data.message:
+    #     if webhook_data.message.text == '/start':
+    #         send_message(webhook_data.message.chat.id, 'Hello World')
+    
     return {"message": "ok"}
 
 @app.get("/")
@@ -232,7 +239,7 @@ Make sure to add the index route because later we can test if the app is working
 
 Now commit the code and push it to GitHub. You can go to vercel and see the deployment is happening. After the deployment is finished, you can go to the `Settings` tab and click on `Environment Variables`. Add the `TOKEN` variable and add the token of your bot.
 
-We are almost done hang in there. 
+We are almost done hang in there.
 
 Now we need to add the webhook to the bot. Copy the URL of the deployed app and add `/webhook` to the end of it and set it as the webhook of the bot. Below is the example.
 

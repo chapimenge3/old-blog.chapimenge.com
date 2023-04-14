@@ -215,7 +215,7 @@ def webhook(webhook_data: TelegramWebhook):
     '''
     # Method 1
     bot = Bot(token=TOKEN)
-    update = Update.de_json(webhook_data, app.bot)
+    update = Update.de_json(webhook_data.__dict__, bot) # convert the Telegram Webhook class to dictionary using __dict__ dunder method
     dispatcher = Dispatcher(bot, None, workers=4)
     register_handlers(dispatcher)
 
